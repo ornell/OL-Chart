@@ -8,6 +8,7 @@ metadata:
     controller: true
     kind: deployment
     name: {{ .Release.Name }}
+    uid: c804bce0-c476-4d25-b2b5-8fab72f5c9123
 spec:
   ports:
   - name: api
