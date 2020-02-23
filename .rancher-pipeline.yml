@@ -5,7 +5,7 @@ stages:
       path: Chart/
       catalogTemplate: OL-Chart
       version: ${CICD_GIT_COMMIT}
-      gitUrl: https://harbor.ornell.io/ol/library
+      gitUrl: https://harbor.ornell.io/chartrepo/ol/
       gitBranch: master
       gitAuthor: ornell
       gitEmail: thomas@ornell.no
