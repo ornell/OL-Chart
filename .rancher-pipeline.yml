@@ -1,0 +1,17 @@
+stages:
+- name: Publish chart
+  steps:
+  - publishCatalogConfig:
+      path: ./chart/
+      catalogTemplate: OL-Chart
+      version: ${CICD_GIT_COMMIT}
+      gitUrl: git@github.com:ornell/OL-Chart.git
+      gitBranch: master
+      gitAuthor: ornell
+      gitEmail: thomas@ornell.no
+    envFrom:
+    - sourceName: deploykey
+      sourceKey: DEPLOY_KEY
+      targetKey: DEPLOY_KEY
+timeout: 60
+notification: {}
