@@ -1,5 +1,0 @@
-image: OL-Service
-imageTag: master
-serviceName: OL-Service
-env: staging
-port: 8080
