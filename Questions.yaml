@@ -17,8 +17,8 @@ questions:
   - variable: envName
     type: enum
     options:
-      - "review"
-      - "staging"
+      - "debug"
+      - "debug"
       - "release"
     description: "OL-Service env name"
     label: OL-Service env name
