@@ -2,7 +2,7 @@ stages:
 - name: Publish chart
   steps:
   - publishCatalogConfig:
-      path: ./chart/
+      path: Chart/
       catalogTemplate: OL-Chart
       version: ${CICD_GIT_COMMIT}
       gitUrl: git@github.com:ornell/OL-Chart.git
