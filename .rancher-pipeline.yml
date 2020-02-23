@@ -5,13 +5,16 @@ stages:
       path: Chart/
       catalogTemplate: OL-Chart
       version: ${CICD_GIT_COMMIT}
-      gitUrl: git@github.com:ornell/OL-Chart.git
+      gitUrl: https://harbor.ornell.io/ol/library
       gitBranch: master
       gitAuthor: ornell
       gitEmail: thomas@ornell.no
     envFrom:
     - sourceName: deploykey
-      sourceKey: DEPLOY_KEY
-      targetKey: DEPLOY_KEY
+      sourceKey: USERNAME
+      targetKey: USERNAME
+    - sourceName: deploykey
+      sourceKey: PASSWORD
+      targetKey: PASSWORD
 timeout: 60
 notification: {}
